@@ -1,0 +1,313 @@
+@font-face {
+    font-family: Uber;
+    src: url(../fonts/UberMoveTextBold.otf);
+    font-weight: bold;
+}
+@font-face {
+    font-family: Uber;
+    src: url(../fonts/UberMoveTextLight.otf);
+    font-weight: lighter;
+}
+@font-face {
+    font-family: Uber;
+    src: url(../fonts/UberMoveTextMedium.otf);
+    font-weight: light;
+    font-weight: 500;
+}
+@font-face {
+    font-family: Uber;
+    src: url(../fonts/UberMoveTextRegular.otf);
+    font-weight: normal;
+}
+@font-face {
+    font-family: Baskerville;
+    src: url(../fonts/baskerville\ bold\ bt.ttf);
+    font-weight: normal;
+}
+
+html {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background: #FFFFFF;
+    font-family: Uber;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+header .navbar {
+    padding: 0;
+    margin: 0;
+}
+
+header .navbar .navbar-top {
+    padding: 30px 170px;
+    background: #216936;
+    width: 100%;
+}
+
+header .navbar .navbar-bottom {
+    padding: 30px 100px;
+    background: #fff;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .navbar .navbar-top .nav-top-links {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: end;
+}
+
+header .navbar .navbar-bottom .nav-top-links {
+    padding: 0;
+    margin: 0;
+}
+
+.navbar .navbar-top .nav-top-links .nav-top-link-item,
+.navbar .navbar-bottom .nav-bottom-links .nav-bottom-link-item {
+    display: inline-block;
+    padding: 0 20px;
+    position: relative;
+}
+
+.navbar .navbar-top .nav-top-links .nav-top-link-item a {
+    color: #FFFFFF;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.navbar .navbar-bottom .nav-bottom-links .nav-bottom-link-item a {
+    font-size: 14px;
+    text-decoration: none;
+    color: #000;
+    font-weight: normal;
+    padding: 0 15px;
+}
+
+.navbar .navbar-bottom .nav-bottom-links .nav-bottom-link-item a img {
+    margin-left: 10px;
+}
+
+.navbar .navbar-bottom .nav-bottom-links .nav-bottom-link-item .nav-bottom-sub-menu {
+    position: absolute;
+    display: flex;
+    padding-top: 70px;
+    left: 50%;
+    transform: translateX(-40%);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease-out;
+    background: #fff;
+}
+
+.navbar .navbar-bottom .nav-bottom-links .nav-bottom-link-item:hover .nav-bottom-sub-menu {
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.3s ease-in;
+}
+
+.navbar .navbar-bottom .nav-bottom-links .nav-bottom-link-item .nav-bottom-sub-menu .nav-bottom-sub-menu-item {
+    padding: 0 50px;
+    border-right: 1px solid #C4C4C4;
+}
+
+.navbar .navbar-bottom .nav-bottom-links .nav-bottom-link-item .nav-bottom-sub-menu .nav-bottom-sub-menu-item:last-of-type {
+    border-right: none;
+}
+
+.navbar .navbar-bottom .nav-bottom-links .nav-bottom-link-item .nav-bottom-sub-menu .nav-bottom-sub-menu-item .title {
+    font-size: 18px;
+    font-family: Baskerville;
+    color: #318649;
+    margin-bottom: 24px;
+}
+
+.navbar .navbar-bottom .nav-bottom-links .nav-bottom-link-item .nav-bottom-sub-menu .nav-bottom-sub-menu-item .sub-menu-list {
+    padding: 0;
+    margin: 0;
+}
+
+.navbar .navbar-bottom .nav-bottom-links .nav-bottom-link-item .nav-bottom-sub-menu .nav-bottom-sub-menu-item .sub-menu-list li {
+    padding: 0;
+    margin: 5px 0;
+    list-style: none;
+}
+
+.navbar .navbar-bottom .nav-bottom-links .nav-bottom-link-item .nav-bottom-sub-menu .nav-bottom-sub-menu-item .sub-menu-list a {
+    padding: 0;
+    white-space: nowrap;
+    font-size: 14px;
+}
+
+main {
+    min-height: 100vh;
+}
+
+main .banner {
+    padding: 30px 100px 100px 100px;
+}
+
+main .banner .top-banner {
+    position: relative;
+}
+
+main .banner .top-banner img {
+    margin-left: 100px;
+}
+
+main .banner .top-banner .top-banner-text {
+    position: absolute;
+    bottom: -30px;
+    width: 468px;
+    margin-top: 30px;
+    background: rgba(245, 245, 245, 0.65);
+    padding: 46px 55px 100px 55px;
+}
+
+main .banner .top-banner .top-banner-text .title {
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+
+main .banner .top-banner .top-banner-text .line {
+    height: 2px;
+    width: 50px;
+    background: #c4c4c4;
+    margin-bottom: 52px;
+}
+
+main .banner .top-banner .top-banner-text h1 {
+    font-size: 48px;
+    font-family: Baskerville;
+    color: #318649;
+    margin-bottom: 20px;
+}
+
+main .banner .top-banner .top-banner-text p {
+    font-size: 14px;
+    margin-bottom: 85px;
+}
+
+main .banner .top-banner .top-banner-text a {
+    padding: 18px 40px;
+    border: 1px solid #C4C4C4;
+    text-decoration: none;
+    color: #000;
+}
+
+main .news {
+    padding: 100px 140px;
+}
+
+main .news .news-left .title {
+    font-size: 36px;
+    font-family: Baskerville;
+    color: #318649;
+    margin-bottom: 40px;
+}
+
+main .news .news-left h5 {
+    font-size: 24px;
+    font-family: Baskerville;
+    color: #000;
+    margin-top: 20px;
+}
+
+main .news .news-left .date {
+    font-size: 13px;
+    color: #C4C4C4;
+}
+
+footer {
+    background: #121A2F;
+    padding: 70px 150px 27px 150px;
+    color: #FFFFFF;
+}
+
+footer .title {
+    font-size: 24px;
+    font-family: Baskerville;
+    font-weight: lighter;
+    margin-bottom: 50px;
+}
+
+footer .campus-logo {
+    margin-bottom: 47px;
+}
+
+footer .campus-address {
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+
+footer .campus-email {
+    margin-bottom: 46px;
+}
+
+footer .campus-email a {
+    font-size: 14px;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+footer .campus-follow {
+    font-size: 18px;
+    font-family: Baskerville;
+    font-weight: bold;
+    margin-bottom: 15px
+}
+
+footer .social-links img {
+    margin-right: 15px;
+}
+
+footer .footer-link-top {
+    padding-bottom: 60px;
+    border-bottom: 1px solid #777777;
+}
+
+footer .footer-link-bottom {
+    padding-top: 60px;
+}
+
+footer .footer-link-section .title {
+    font-size: 18px;
+    font-family: Baskerville;
+    margin-bottom: 14px;
+}
+
+footer .footer-link-section ul {
+    padding: 0;
+    margin: 0;
+}
+
+footer .footer-link-section ul li {
+    padding: 0;
+    margin: 10px 0;
+    list-style: none;
+}
+
+footer .footer-link-section ul li a {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 13px;
+    font-weight: normal;
+}
+
+footer .wrapper {
+    padding-bottom: 40px;
+    border-bottom: 1px solid #777777;
+}
+
+footer .copyright {
+    margin-top: 27px;
+    font-size: 14px;
+}
