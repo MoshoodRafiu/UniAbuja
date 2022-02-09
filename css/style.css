@@ -1,28 +1,34 @@
 @font-face {
-    font-family: Uber;
-    src: url(../fonts/UberMoveTextBold.otf);
+    font-family: 'Uber';
+    src: url('../fonts/UberMoveTextBold.otf');
     font-weight: bold;
 }
 @font-face {
-    font-family: Uber;
-    src: url(../fonts/UberMoveTextLight.otf);
-    font-weight: lighter;
+    font-family: 'Uber';
+    src: url('../fonts/UberMoveTextLight.otf');
+    font-weight: 200;
 }
 @font-face {
-    font-family: Uber;
-    src: url(../fonts/UberMoveTextMedium.otf);
-    font-weight: light;
+    font-family: 'Uber';
+    src: url('../fonts/UberMoveTextMedium.otf');
     font-weight: 500;
 }
 @font-face {
-    font-family: Uber;
-    src: url(../fonts/UberMoveTextRegular.otf);
+    font-family: 'Uber';
+    src: url('../fonts/UberMoveTextRegular.otf');
     font-weight: normal;
 }
 @font-face {
-    font-family: Baskerville;
-    src: url(../fonts/baskerville\ bold\ bt.ttf);
+    font-family: 'Baskerville Normal';
+    font-style: normal;
     font-weight: normal;
+    src: local('Baskerville Normal'), url('../fonts/baskvl.woff') format('woff');
+}
+@font-face {
+    font-family: 'Baskerville Light';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Baskerville Light'), url('../fonts/BASKE9.woff') format('woff');
 }
 
 html {
@@ -106,6 +112,7 @@ header .navbar .navbar-bottom .nav-top-links {
     visibility: hidden;
     transition: all 0.3s ease-out;
     background: #fff;
+    z-index: 101;
 }
 
 .navbar .navbar-bottom .nav-bottom-links .nav-bottom-link-item:hover .nav-bottom-sub-menu {
@@ -125,7 +132,7 @@ header .navbar .navbar-bottom .nav-top-links {
 
 .navbar .navbar-bottom .nav-bottom-links .nav-bottom-link-item .nav-bottom-sub-menu .nav-bottom-sub-menu-item .title {
     font-size: 18px;
-    font-family: Baskerville;
+    font-family: Baskerville Light;
     color: #318649;
     margin-bottom: 24px;
 }
@@ -186,7 +193,7 @@ main .banner .top-banner .top-banner-text .line {
 
 main .banner .top-banner .top-banner-text h1 {
     font-size: 48px;
-    font-family: Baskerville;
+    font-family: Baskerville Light;
     color: #318649;
     margin-bottom: 20px;
 }
@@ -203,20 +210,49 @@ main .banner .top-banner .top-banner-text a {
     color: #000;
 }
 
+main .page-heading {
+    height: 220px;
+    background: #F5F5F5;
+    position: absolute;
+    left: 0;
+    top: 228px;
+    width: 100%;
+}
+
+main .page-heading .title {
+    font-family: Baskerville;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    color: #318649;
+    margin-left: 157px;
+    margin-top: 63px;
+    position: relative;
+}
+
+main .page-body {
+    position: absolute;
+    width: 100%;
+    height: 473px;
+    left: 0;
+    top: 448px;
+    background: #318649;
+}
+
 main .news {
     padding: 100px 140px;
 }
 
 main .news .news-left .title {
     font-size: 36px;
-    font-family: Baskerville;
+    font-family: Baskerville Light;
     color: #318649;
     margin-bottom: 40px;
 }
 
 main .news .news-left h5 {
     font-size: 24px;
-    font-family: Baskerville;
+    font-family: Baskerville Light;
     color: #000;
     margin-top: 20px;
 }
@@ -224,6 +260,105 @@ main .news .news-left h5 {
 main .news .news-left .date {
     font-size: 13px;
     color: #C4C4C4;
+}
+
+main .news-right {
+    margin-top: 10px;
+    margin-left: 25px;
+}
+
+main .news-right .news-right-header {
+    display: flex;
+    margin-bottom: 40px;
+}
+
+main .news-right .news-right-header span {
+    margin-right: 28px;
+    align-self: center;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+
+}
+
+main .news-right .news-right-header .news-right-select {
+    width: 208px;
+    height: 44px;
+    background: #E5E5E5;
+    border: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+    background-repeat: no-repeat;
+    background-position-x: 100%;
+    background-position-y: 10px;
+}
+
+main .news-right .news-right-header .news-right-select:focus,
+main .news-right .news-right-header .news-right-select:active {
+    outline: none;
+}
+
+main .news-right .news-right-header .news-right-btn {
+    border: none;
+    padding: 8px;
+    width: 50px;
+    color: #FFFFFF;
+    background: #216936;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    margin-left: 5px;
+}
+
+main .news-right .news-right-body .content .end {
+    border-bottom: 0;
+}
+
+main .news-right .news-right-body .content a {
+    font-family: Baskervville Light;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 23px;
+    text-decoration: none;
+    color: #000000;
+}
+
+main .news-right .news-right-body .content p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 16px;
+    color: #C4C4C4;
+    margin: 10px 0 20px 0;
+}
+
+main .news-right .news-right-body .content .line {
+    width: 55px;
+    background: #C4C4C4;
+    height: 1px;
+    margin-bottom: 20px;
+}
+
+main .faculties {
+    padding: 100px 140px;
+    background: #216936;
+}
+
+main .faculties .top-faculties {
+    display: flex;
+    position: relative;
+}
+
+main .faculties .top-faculties .faculty-card-large {
+    width: 60%;
+}
+
+main .faculties .top-faculties .faculty-cards-wrapper {
+    width: 50%;
+    position: absolute;
+    right: 0;
 }
 
 footer {
@@ -234,7 +369,7 @@ footer {
 
 footer .title {
     font-size: 24px;
-    font-family: Baskerville;
+    font-family: Baskerville Light;
     font-weight: lighter;
     margin-bottom: 50px;
 }
@@ -260,7 +395,7 @@ footer .campus-email a {
 
 footer .campus-follow {
     font-size: 18px;
-    font-family: Baskerville;
+    font-family: Baskerville Light;
     font-weight: bold;
     margin-bottom: 15px
 }
@@ -280,7 +415,7 @@ footer .footer-link-bottom {
 
 footer .footer-link-section .title {
     font-size: 18px;
-    font-family: Baskerville;
+    font-family: Baskerville Light;
     margin-bottom: 14px;
 }
 
