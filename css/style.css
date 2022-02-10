@@ -346,19 +346,143 @@ main .faculties {
     background: #216936;
 }
 
-main .faculties .top-faculties {
+main .faculties .top-faculties,
+main .faculties .bottom-faculties {
     display: flex;
     position: relative;
+    width: 100%;
+}
+
+main .faculties .top-faculties .faculty-card-large {
+    padding: 100px;
+    height: 780px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+}
+
+main .faculties .bottom-faculties .faculty-card-large {
+    padding: 100px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+    width: 50%;
+}
+
+main .faculties .faculty-card-large {
+    padding: 100px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+}
+
+main .faculties .faculty-card-large .title {
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+
+main .faculties .faculty-card-large .line {
+    height: 2px;
+    width: 50px;
+    background: #c4c4c4;
+    margin-bottom: 52px;
+}
+
+main .faculties .faculty-card-large p {
+    font-size: 14px;
+    margin-bottom: 85px;
+}
+
+main .faculties .faculty-card-large a {
+    padding: 18px 40px;
+    border: 1px solid #C4C4C4;
+    text-decoration: none;
+    color: #fff;
+}
+
+main .faculties .faculty-card {
+    width: 50%;
+    padding: 30px;
+}
+
+main .faculties .bottom-faculties .faculty-card {
+    width: 50%;
+    padding: 30px;
+}
+
+main .faculties .faculty-card div {
+    font-size: 36px;
+    font-family: 'Baskerville Light';
+    color: #fff;
+    margin-top: 100px;
+    margin-bottom: 25px;
+    line-height: 36.11px;
+}
+
+main .faculties .faculty-card a {
+    font-size: 12px;
+    text-decoration: none;
+    color: #fff;
+    margin-bottom: 30px;
 }
 
 main .faculties .top-faculties .faculty-card-large {
     width: 60%;
+    background: url(../images/Image\ 28.png) center/cover no-repeat, #000000;
+    padding: 100px 200px 100px 100px;
+}
+
+main .faculties .bottom-faculties .faculty-card-large {
+    background: linear-gradient(to bottom, rgba(18, 26, 47, 0.8), rgba(18, 26, 47, 0.8)), url(../images/Image\ 17.png) center/cover no-repeat;
+    padding: 100px;
+}
+
+main .faculties .faculty-cards-wrapper {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 main .faculties .top-faculties .faculty-cards-wrapper {
     width: 50%;
     position: absolute;
     right: 0;
+    bottom: 0;
+}
+
+main .faculties .bottom-faculties .faculty-cards-wrapper {
+    width: 50%;
+}
+
+.faculty-card.agriculture {
+    background: url(../images/Image\ 14.png) center/cover no-repeat, #318649;
+}
+
+.faculty-card.education {
+    background: url(../images/Image\ 2.png) center/cover no-repeat, #535353;
+}
+
+.faculty-card.law {
+    background: url(../images/Image\ 15.png) center/cover no-repeat, #a17e00;
+}
+
+.faculty-card.engineering {
+    background: url(../images/Image\ 22.png) center/cover no-repeat, #295ba7;
+}
+
+.faculty-card.management {
+    background: url(../images/Image\ 23.png) center/cover no-repeat, #565656;
+}
+
+.faculty-card.science {
+    background: url(../images/Image\ 3.png) center/cover no-repeat, #797021;
+}
+
+.faculty-card.social-science {
+    background: url(../images/Image\ 24.png) center/cover no-repeat, #43154A;
+}
+
+.faculty-card.medicine {
+    background: url(../images/Image\ 25.png) center/cover no-repeat, #C34C18;
 }
 
 footer {
